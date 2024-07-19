@@ -1,2 +1,2 @@
-# Projects
-My projects in the journey of web development.
+# Asking for Date
+Just a fun project.
