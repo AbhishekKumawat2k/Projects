@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body style=" background: linear-gradient(rgb(104, 104, 91), rgb(229, 71, 71));">
     <div class="container">
       <div>
         <h1 class="header_text">Yeeyy ! Finally</h1>
@@ -14,9 +14,38 @@
           alt="Cute animated illustration"
         />
       </div>
+     
       <button class="btn" id="yesButton" onclick="nextPage()">
         Let's Fix a Date
       </button>
+      <div  style="margin-left:50px">
+      <button
+      class="btn"
+      id="noButton" style="background-color: rgba(255, 1, 1, 0.719);"
+      onmouseover="moveButton()"
+      onclick="moveButton()"
+    >
+    Zorr hi aa jaygega yr
+    </button>
+  </div>
     </div>
+    <script>
+            function nextPage() {
+            window.location.href = "thirdpage.html";
+          }
+     function moveButton() {
+            var x =
+              Math.random() *
+              (window.innerWidth -
+                document.getElementById("noButton").offsetWidth);
+            var y =
+              Math.random() *
+              (window.innerHeight -
+                document.getElementById("noButton").offsetHeight);
+            document.getElementById("noButton").style.left = ` ${x}px`;
+            document.getElementById("noButton").style.top =`${y}px`;
+          }
+     
+    </script>
   </body>
 </html>
